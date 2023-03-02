@@ -1,9 +1,8 @@
-import { View, Image, SafeAreaView, Text, TextInput, ScrollView } from 'react-native'
-import React, { useLayoutEffect } from 'react'
-import { useNavigation } from '@react-navigation/native'
-import { ChevronDownIcon, UserIcon, MagnifyingGlassIcon,AdjustmentsVerticalIcon } from 'react-native-heroicons/outline'
-import Categories from '../components/categories';
-
+import { View, Image, SafeAreaView, Text, TextInput, ScrollView } from 'react-native';
+import React, { useLayoutEffect } from 'react';
+import { useNavigation } from '@react-navigation/native';
+import { ChevronDownIcon, UserIcon, MagnifyingGlassIcon,AdjustmentsVerticalIcon } from 'react-native-heroicons/outline';
+import  Categories from '../components/Categories';
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -52,7 +51,10 @@ const HomeScreen = () => {
     </View>
 
     {/* Body */}
-    <ScrollView>
+    <ScrollView className="bg-gray-100
+     contentContainerStyle = {{
+        paddingBottom: 20,
+     }}">
       {/* Categories slider */}
           <Categories />
 
