@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView } from 'react-native'
+import { View, Image, SafeAreaView } from 'react-native'
 import React, { useLayoutEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 
@@ -14,9 +14,15 @@ const HomeScreen = () => {
   
   return ( 
     <SafeAreaView>
-      <View>
-        <Text>Home Screen</Text>
-      </View>
+        {/* Header */}
+         <View>
+          <Image
+            source = {{
+              uri: "https://links.papareact.com/wru",
+            }} 
+            className = "h-7 w-7 bg-gray-300 p-4 rounded-full"
+          />
+         </View>
     </SafeAreaView>
   );
 };
